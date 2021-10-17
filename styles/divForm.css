@@ -1,0 +1,154 @@
+.divForm {
+    margin-bottom: 100px;
+    padding: 45px 0;
+    background: #F4F4F4;
+}
+
+.form__header {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 120%;
+
+    color: #202020;
+
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.form__about {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 160%;
+
+    color: #202020;
+
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+
+.divForm .container form {
+    width: 1000px;
+    margin: 0 auto;
+
+}
+
+.form__top {
+    display: flex;
+    width: 1000px;
+    justify-content: space-between;
+}
+
+.form__input {
+    font-family: Arial;
+    font-size: 14px;
+    border: 0px;
+    border-bottom: 2px solid rgba(32, 32, 32, 0.4);;
+    padding: 10px;
+    width: 250px;
+    background: none;
+    color: #202020;
+}
+
+.form__input:-webkit-autofill {
+    transition: all 5000s ease-in-out;
+}
+
+.form__input:focus {
+    outline: none;
+}
+
+.form__bottom {
+    width: 485px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.form__button {
+    display: inline-block;
+    vertical-align: top;
+    width: 250px;
+    margin-right: 25px;
+    border: 0px;
+}
+
+.form__politic {
+    display: inline-block;
+
+    font-family: Arial;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 125%;
+
+    color: gray;
+
+    width: 200px;
+
+    vertical-align: top;
+}
+
+.form__politic a {
+    font-family: Arial;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 125%;
+
+    color: gray;
+}
+
+@media (max-width: 700px) {
+    .divForm {
+        background: none;
+        padding: 0;
+    }
+
+    .divForm .container {
+        background: #F4F4F4;
+        padding: 45px 0;
+    }
+
+    .form__header {
+        width: 94%;
+        margin-left: 3%;
+    }
+
+    .form__about {
+        font-size: 18px;
+    }
+
+    .divForm .container form {
+        width: 100%;
+    }
+
+    .form__top {
+        display: block;
+        width: 100%;
+    }
+
+    .form__button {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+
+    .form__input {
+        display: block;
+        margin: 0 auto;
+        width: 350px;
+        font-size: 20px;
+        margin-bottom: 25px;
+    }
+
+    .form__politic {
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+}

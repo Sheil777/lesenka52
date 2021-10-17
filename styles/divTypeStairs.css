@@ -1,0 +1,238 @@
+.typesStairs {
+    margin-bottom: 80px;
+}
+
+.ts__header {
+    position: relative;
+    margin-bottom: 30px;
+    height: 40px;
+}
+
+.ts__header span {
+    position: absolute;
+
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 120%;
+
+    color: #202020;
+    z-index: 5;
+}
+
+.ts__header::before {
+    content: "";
+    display: inline-block;
+
+    position: absolute;
+    left: -40px;
+    top: 22px;
+
+    width: 111px;
+    height: 20px;
+
+    background: rgba(249, 187, 136, 1);
+}
+
+.ts__move {
+    display: inline-block;
+    font-size: 36px;
+
+    position: absolute;
+    right: 0;
+}
+
+.ts__move .swiper-button-prev:after,
+.ts__move .swiper-button-next:after{
+    display: none;
+}
+
+.ts__pagination {
+    display: none;
+}
+
+.ts__slider {
+    width: 100%;
+    height: 540px;
+
+    min-width: 0;
+    overflow: hidden;
+}
+
+.ts__wrapper {
+    display: contents;
+    min-width: 0;
+}
+
+.ts__block {
+    height: 540px;
+    width: 386px;
+
+    background: #F4F4F4;
+}
+
+.tsBlock__top {
+    height: 253px;
+    background: white;
+
+    display: flex;
+    justify-content: center;
+
+    padding: 40px;
+    margin: 2px;
+}
+
+.tsBlock__top img{
+    /* width: 100px; */
+}
+
+.tsBlock__bottom {
+    height: 180px;
+    background: #F4F4F4;
+
+    padding-top: 23px;
+}
+
+.tsBlock__name {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 160%;
+
+    text-align: center;
+
+    color: #202020;
+}
+
+.tsBlock__price {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 140%;
+
+    text-align: center;
+
+    color: #202020;
+}
+
+.tsBlock__price h3 {
+    display: inline-block;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 160%;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #202020;
+}
+
+.tsBlock__button {
+    width: 191px;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 20px;
+
+    background: #FF9646;
+    border-radius: 2px;
+
+    font-family: "Arial";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+}
+
+@media (max-width: 700px) {
+    .typesStairs {
+        margin-bottom: 80px;
+    }
+
+    .ts__slider {
+        height: auto;
+        width: 94%;
+        margin: 0 auto;
+    }
+
+    .ts__pagination {
+        display: block;
+        margin-top: 60px;
+        width: 100%;
+        position: relative;
+    }
+
+    .swiper-pagination {
+        position: absolute;
+    }
+
+    .swiper-pagination-bullet {
+        border-radius: 0 !important;
+        width: 14px !important;
+        height: 14px !important;
+        background: #FF9646 !important;
+        opacity: 1 !important;
+        margin: 0 15px !important;
+        margin-bottom: 4px !important;
+    }
+
+    .swiper-pagination-bullet-active {
+        width: 22px !important;
+        height: 22px !important;
+        background: black !important;
+        margin-bottom: 0 !important;
+    }
+
+    .ts__header {
+        width: 94%;
+        height: 85px;
+        margin: 0 auto;
+    }
+
+    .ts__block {
+        display: inline-block;
+        width: 94%;
+        margin: 0 auto;
+    }
+
+    .tsBlock__top {
+        height: 70%;
+    }
+
+    .tsBlock__top img {
+        height: 500px;
+    }
+
+    .tsBlock__name {
+        font-size: 35px;
+    }
+
+    .tsBlock__price, .tsBlock__price h3 {
+        font-size: 26px;
+    }
+
+    .tsBlock__bottom {
+        height: 220px;
+    }
+
+    .tsBlock__button {
+        width: 260px;
+        height: 60px;
+        font-size: 20px;
+    }
+
+    .ts__move {
+        display: none;
+    }
+}

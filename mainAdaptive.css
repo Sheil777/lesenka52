@@ -1,0 +1,258 @@
+@media (max-width: 1300px){
+    body {
+        min-width: auto;
+    }
+
+    .main {
+        height: 890px;
+    }
+
+    .main__container {
+        width: 1200px;
+        margin: 0;
+
+        background: linear-gradient(
+                270deg, #F4F4F4 66%, #F9BB88 23%);
+
+        height: 890px;
+    }
+
+    header {
+        width: 1135px;
+    }
+
+    .header__navigation-container {
+        width: 475px;
+        margin-left: 140px;
+    }
+
+    .header__navigation {
+        width: 480px;
+    }
+
+    .main__img img {
+        width: 775px;
+        height: auto;
+    }
+
+    .main__description {
+        left: 888px;
+    }
+
+    .main__calculation {
+        top: 649px;
+        left: 329px;
+    }
+}
+
+@media (max-width: 700px){
+    body {
+        min-width: auto;
+    }
+
+    .main {
+        width: 100%;
+        height: auto; /* 1135px; */
+
+        z-index: -2;
+    }
+
+    .main__container {
+        max-width: 670px;
+        height: auto;
+    }
+
+    .main__headerFlex {
+        position: static;
+        margin-top: 0;
+        padding-top: 25px;
+        height: auto;
+    }
+
+    header {
+        height: auto;
+    }
+
+    .header__logo {
+        margin-left: 40px;
+        height: 80px;
+    }
+
+    .header__name {
+        display: none;
+    }
+
+    .header__navigation {
+        display: block;
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 0px;
+
+        transition: all 0.5s;
+    }
+
+    .header__navigation li {
+        display: none;
+    }
+
+    .header__call {
+        display: none;
+    }
+
+    .menu__button {
+        display: block;
+        position: fixed;
+        right: 0;
+        top: 0;
+
+        margin: 30px;
+
+        width: 50px;
+    }
+
+    .mb__cont {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    .menu__buttonLine {
+        width: 100%;
+        height: 6px;
+
+        background: #27242B;
+        border-radius: 2px;
+
+        position: absolute;
+    }
+
+    .menu__buttonLine2 {
+        top: 15px;
+    }
+
+    .menu__buttonLine3 {
+        top: 30px;
+    }
+
+    .main__img {
+        position: static;
+        width: 100%;
+        height: auto;
+    }
+
+    .main__img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .main__description {
+        position: static;
+        margin-left: 32%;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-left: 10%;
+        padding-right: 10%;
+        width: 47%;
+    }
+
+    .description__line {
+        width: 90%;
+        margin-left: -60px;
+    }
+
+    .main__calculation {
+        position: static;
+        width: 94%;
+        margin-left: 3%;
+
+        padding-top: 1px;
+        padding-bottom: 45px;
+
+    }
+
+    .calculation__text, .calculation__text b {
+        font-size: 20px;
+
+    }
+
+    .calculation__text {
+        margin-left: 20%;
+    }
+
+    .calculation__button {
+        margin-left: 20%;
+        font-size: 28px;
+
+        width: 310px;
+        height: 90px;
+    }
+
+    /* Навигация для мобильный устройств */
+    .header__navigation-phone {
+
+        margin: 0;
+
+        width: 280px;
+        height: 100%;
+
+        background: #F9BB88;
+
+        z-index: 10;
+    }
+
+    .header__navigation-phone:before {
+        content: " ";
+        display: block;
+        font-family: Arial;
+        font-size: 20px;
+        color: #27242B;
+        height: 120px;
+
+        vertical-align: middle;
+    }
+
+    .header__navigation-phone li {
+        display: block;
+        height: 50px;
+        border-bottom: 1px solid white;
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+
+    .header__navigation-phone li:first-child {
+        border-top: 1px solid white;
+    }
+
+    .header__navigation-phone li a {
+        font-family: Arial;
+        font-size: 25px;
+        color: #27242B;
+        white-space: nowrap;
+    }
+
+    /* Кнопка открытия меню */
+    .menu__button {
+        z-index: 10;
+    }
+
+    .menu__buttonLine {
+        transition: all 0.3s;
+    }
+
+    .menu__button-close .menu__buttonLine1{
+        transform: rotate(45deg);
+        top: 15px;
+    }
+
+    .menu__button-close .menu__buttonLine2{
+        width: 0;
+    }
+
+    .menu__button-close .menu__buttonLine3{
+        transform: rotate(-45deg);
+        top: 15px;
+    }
+
+    /* Навигация для мобильный устройств */
+}
