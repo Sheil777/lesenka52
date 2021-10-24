@@ -1,0 +1,378 @@
+.examples {
+    height: 850px;
+    background: linear-gradient(270deg, #F9BB88 30%, #F4F4F4 23%);
+}
+
+.examples .container {
+    background: linear-gradient(270deg, #F9BB88 33%, #F4F4F4 23%);
+
+    height: 100%; /* Удали потом */
+}
+
+.examples__header {
+    padding-top: 110px;
+    position: relative;
+}
+
+.examples__header span {
+    font-family: Montserrat, Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 120%;
+
+    color: #202020;
+
+    position: relative;
+    z-index: 2;
+}
+
+.examples__header:before {
+    content: "";
+    display: block;
+    background: #F9BB88;
+
+    width: 120px;
+    height: 18px;
+
+    position: absolute;
+    top: 180px;
+    left: -40px;
+
+    z-index: 1;
+}
+
+/* Examples info */
+
+.examples__info {
+    width: 420px;
+    margin-top: 40px;
+
+    vertical-align: top;
+    display: inline-block;
+
+    overflow: hidden;
+}
+
+.ei__header {
+    font-family: Montserrat, Arial;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 160%;
+
+    color: #202020;
+}
+
+.ei__text {
+    margin-top: 30px;
+
+    font-family: Montserrat, Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 210%;
+
+    color: rgba(32, 32, 32, 0.7);
+}
+
+.ei__text b {
+    font-size: 14px;
+
+    color: #202020;
+}
+
+.ei__price {
+    margin-top: 28px;
+
+}
+
+.ei__price span:first-child, .ei__price span:last-child{
+    font-family: Montserrat, Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 190%;
+    /* or 28px */
+
+    color: rgba(32, 32, 32, 0.7);
+}
+
+.ei__price span:last-child b {
+    margin-left: 42px;
+
+    font-family: Montserrat, Arial;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 160%;
+    /* identical to box height, or 37px */
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #202020;
+}
+
+.ei__button {
+    margin-top: 41px;
+    width: 263px;
+    height: 50px;
+}
+
+/* Examples info */
+
+/* Examples slider */
+
+.examples__slider {
+    display: inline-block;
+    width: 490px;
+    margin-top: -106px;
+    margin-left: 208px;
+
+    overflow: hidden;
+}
+
+.es__img {
+
+}
+
+.es__img img{
+    height: 630px;
+    width: 490px;
+}
+
+.es__buttons {
+    display: inline-block;
+    width: 208px;
+    height: 130px;
+    background: linear-gradient(0deg, #202020, #202020), #0E665F;
+}
+
+.es__pagination {
+    display: inline-block;
+    width: 282px;
+    height: 130px;
+
+}
+
+.es__paginationBullets {
+    margin-top: 60px;
+    margin-left: 60px;
+}
+
+.es__paginationBullets .swiper-pagination-bullet {
+    width: 9px;
+    height: 9px;
+    border-radius: 0;
+    background: white;
+    opacity: 1;
+    margin-right: 18px !important;
+}
+.es__paginationBullets .swiper-pagination-bullet-active {
+    width: 17px;
+    height: 17px;
+    background: #202020;
+    margin-bottom: -4px !important;
+}
+
+
+.es__buttons {
+    vertical-align: top;
+    position: relative;
+}
+
+.es__arrowLeft {
+    position: absolute;
+    top: 60px;
+    left: 70px;
+
+    width: 10px;
+    height: 16px;
+}
+
+.es__arrowL:before {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 10px;
+    background: white;
+    transform: rotate(45deg);
+    position: absolute;
+}
+
+.es__arrowL:after{
+    content: "";
+    display: block;
+    width: 2px;
+    height: 10px;
+    background: white;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 6px;
+}
+
+
+.es__buttons:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    background: white;
+    width: 2px;
+    height: 34px;
+}
+
+.es__arrowRight {
+    transform: rotate(180deg);
+
+    position: absolute;
+    top: 60px;
+    left: 120px;
+    width: 10px;
+    height: 16px;
+}
+
+.es__arrowR:before {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 10px;
+    background: white;
+    transform: rotate(45deg);
+    position: absolute;
+}
+
+.es__arrowR:after{
+    content: "";
+    display: block;
+    width: 2px;
+    height: 10px;
+    background: white;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 6px;
+}
+
+.es__arrowL:after, .es__arrowL:before,
+.es__arrowR:after, .es__arrowR:before {
+    transition: 0.3s;
+}
+
+.es__arrowLeft:hover, .es__arrowRight:hover {
+    cursor: pointer;
+}
+
+/*
+.es__arrowLeft:hover ~ .es__arrowRight {
+    background: #FF9646;
+}
+*/
+
+
+.es__arrowLeft:hover  .es__arrowL:after{
+    background: #FF9646;
+}
+
+.es__arrowLeft:hover  .es__arrowL:before{
+    background: #FF9646;
+}
+
+.es__arrowRight:hover  .es__arrowR:after{
+    background: #FF9646;
+}
+
+.es__arrowRight:hover  .es__arrowR:before{
+    background: #FF9646;
+}
+
+/* Examples slider */
+
+
+@media (max-width: 700px) {
+    .examples {
+        height: auto;
+    }
+
+    .examples .container {
+        background: linear-gradient(270deg, #F9BB88 25%, #F4F4F4 23%);
+    }
+
+    .examples__header {
+        padding-top: 80px;
+        padding-bottom: 80px;
+        margin-left: 3%;
+    }
+
+    .examples__header span {
+        font-size: 45px;
+    }
+
+    .examples__header:before {
+        top: 167px;
+        width: 165px;
+    }
+
+    .examples__body {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .examples__info {
+        display: block;
+        margin-top: 0;
+        margin-left: 3%;
+        width: 470px;
+    }
+
+    .examples__slider {
+        display: block;
+        margin: 0 auto;
+        width: 640px;
+    }
+
+    .es__img img {
+        height: auto;
+    }
+
+    .es__buttons {
+        display: none;
+    }
+
+    .es__pagination {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .es__paginationBullets {
+        margin-top: 45px;
+    }
+
+    .ei__header {
+        font-size: 30px;
+    }
+
+    .ei__text {
+        font-size: 20px;
+    }
+
+    .ei__text b {
+        font-size: inherit;
+    }
+
+    .ei__price span:first-child {
+        font-size: 20px;
+    }
+
+    .ei__price span:last-child b{
+        font-size: 30px;
+        white-space: nowrap;
+    }
+
+    .ei__button {
+        width: 455px;
+        height: 80px;
+        font-size: 25px;
+    }
+}

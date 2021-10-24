@@ -2,14 +2,14 @@
 
 
 $(document).ready(
-  function(){
-      $('.menu__button').click(
+    function(){
+        $('.menu__button').click(
           function (event) {
               $('ul.header__navigation').toggleClass('header__navigation-phone');
               $('div.menu__button').toggleClass('menu__button-close');
           }
-      );
-  }
+        );
+    }
 );
 
 new Swiper('.ts__slider',{
@@ -50,3 +50,28 @@ new Swiper('.ts__slider',{
     speed: 600,
 
 });
+
+let rightSliderOnMainPage = new Swiper('.examples__slider',{
+    navigation: {
+        nextEl: '.es__arrowRight',
+        prevEl: '.es__arrowLeft',
+    },
+
+    pagination: {
+        el: '.es__paginationBullets'
+    }
+});
+
+let leftSliderOnMainPage = new Swiper('.examples__info',{
+    effect: 'fade',
+
+    fadeEffect: {
+        crossFade: true
+    },
+
+    simulateTouch: false
+});
+
+// Передача управления
+rightSliderOnMainPage.controller.control = leftSliderOnMainPage;
+leftSliderOnMainPage.controller.control = rightSliderOnMainPage;
