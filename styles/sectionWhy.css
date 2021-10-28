@@ -221,3 +221,9 @@
         height: 150px;
     }
 }
+
+@media (max-width: 1300px){
+    .why__image::before {
+        right: 0;
+    }
+}
