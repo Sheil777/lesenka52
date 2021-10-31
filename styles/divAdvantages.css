@@ -75,28 +75,35 @@
 @media (max-width: 700px) {
     .container {
         max-width: 670px;
+        width: auto;
     }
 
     .advantages__block {
         display: block;
         width: 94%;
         margin-left: 3%;
-        height: 300px;
+        /* height: 300px; */
+        height: 55vw;
     }
 
     .advantages__image img{
-        left: 70px;
+        top: 9vw;
+        left: 11.6vw;
     }
 
     .advantages__image::before {
-        left: 60px;
+        /* left: 60px; */
+        left: 10vw;
+        top: 7vw;
     }
 
     .advantages__header {
-        font-size: 26px;
+        margin-top: 7vw;
+        font-size: 4.3vw;
     }
 
     .advantages__text {
-        font-size: 20px;
+        font-size: 3.6vw;
+        margin-right: 15vw;
     }
 }

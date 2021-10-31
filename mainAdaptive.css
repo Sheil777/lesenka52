@@ -58,8 +58,10 @@
     }
 
     .main__container {
-        max-width: 670px;
+        max-width: 100%;
+        /* max-width: 670px; */
         height: auto;
+        width: auto;
     }
 
     .main__headerFlex {
@@ -67,15 +69,22 @@
         margin-top: 0;
         padding-top: 25px;
         height: auto;
+        margin-bottom: 4%;
     }
 
     header {
         height: auto;
+        width: 100%;
     }
 
     .header__logo {
-        margin-left: 40px;
-        height: 80px;
+        margin-left: 6%;
+        height: auto;
+        width: 20%;
+    }
+
+    .header__logo img{
+        width: 100%;
     }
 
     .header__name {
@@ -109,6 +118,8 @@
         margin: 30px;
 
         width: 50px;
+
+        z-index: 10;
     }
 
     .mb__cont {
@@ -146,46 +157,85 @@
         height: auto;
     }
 
+    /* Main Description */
+
     .main__description {
         position: static;
-        margin-left: 32%;
+        margin-left: 29%;
         padding-top: 40px;
         padding-bottom: 40px;
         padding-left: 10%;
-        padding-right: 10%;
-        width: 47%;
+        padding-right: 4%;
+        width: auto;
+    }
+
+    .description__one {
+        font-size: 2.4vw;
+    }
+
+    .description__one b {
+        font-size: inherit;
+    }
+
+    .description__two {
+        font-family: "Arial";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 8.5vw;
+        line-height: 120%;
+    }
+
+    .description__three {
+        font-size: 2.8vw;
+        margin-bottom: 8vw;
     }
 
     .description__line {
         width: 90%;
         margin-left: -60px;
+        margin-bottom: 7vw;
     }
+
+    .description__button {
+        width: 46vw;
+        height: 10vw;
+        font-size: 3vw;
+    }
+
+    /* Calculation */
 
     .main__calculation {
         position: static;
         width: 94%;
+        height: 40vw;
         margin-left: 3%;
 
         padding-top: 1px;
-        padding-bottom: 45px;
-
-    }
-
-    .calculation__text, .calculation__text b {
-        font-size: 20px;
+        padding-bottom: 25px;
 
     }
 
     .calculation__text {
+        margin-top: 8vw;
+        margin-right: 12vw;
+    }
+
+    .calculation__text, .calculation__text b {
+        font-size: 4.2vw;
+    }
+
+    .calculation__text {
         margin-left: 20%;
+        margin-bottom: 6%;
+        font-weight: 300;
     }
 
     .calculation__button {
         margin-left: 20%;
-        font-size: 28px;
+        font-size: 3.5vw;
 
-        width: 310px;
-        height: 90px;
+        width: 50%;
+        height: 12vw;
     }
 
     /* Навигация для мобильный устройств */
@@ -233,7 +283,6 @@
 
     /* Кнопка открытия меню */
     .menu__button {
-        z-index: 10;
     }
 
     .menu__buttonLine {

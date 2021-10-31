@@ -323,13 +323,13 @@
         display: block;
         margin-top: 0;
         margin-left: 3%;
-        width: 470px;
+        width: 94%;
     }
 
     .examples__slider {
         display: block;
         margin: 0 auto;
-        width: 640px;
+        width: 94%;
     }
 
     .es__img img {
@@ -371,7 +371,7 @@
     }
 
     .ei__button {
-        width: 455px;
+        width: 85%;
         height: 80px;
         font-size: 25px;
     }

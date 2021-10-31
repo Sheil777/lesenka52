@@ -153,7 +153,6 @@
 @media (max-width: 700px) {
     .why .container {
         margin-left: 8%;
-        width: 620px;
     }
 
     .why__header span {
@@ -207,11 +206,11 @@
     .why__image {
         margin-left: 0;
     }
-
+/*
     .why__image img {
         width: 570px;
     }
-
+*/
     .why__image:before {
         top: -1495px;
         right: 20px;
