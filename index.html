@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width">
 
     <title>Лесенка 52</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/index/header.css">
+    <link rel="stylesheet" href="styles/index/main.css">
     <link rel="stylesheet" href="mainAdaptive.css">
     <link rel="stylesheet" href="styles/divAdvantages.css">
     <link rel="stylesheet" href="styles/divTypeStairs.css">
@@ -14,7 +16,6 @@
     <link rel="stylesheet" href="styles/sectionExamples.css">
 
     <link rel="stylesheet" href="styles/swiper-bundle.min.css">
-    <!--<link rel="script" href="js/jquery-3.3.1.min.js">-->
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
 
@@ -22,65 +23,67 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700&family=Open+Sans&display=swap" rel="stylesheet">
-    <!--
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:display=swap" rel="stylesheet">
-    -->
 </head>
 <body>
-    <div class="main">
-        <div class="main__container">
-            <div class="main__headerFlex">
-                <header>
-                    <div class="header__logo">
-                        <img src="img/LOGO.png" alt="logo">
-                    </div>
-                    <div class="header__name">
-                        <p>Проектирование</p>
-                        <p>Изготовление</p>
-                        <p>Монтаж</p>
-                    </div>
-                    <div class="header__navigation-container">
-                        <ul class="header__navigation">
-                           <li><a href="#">О компании</a></li>
-                           <li><a href="#">Каталог</a></li>
-                           <li><a href="#">Примеры работ</a></li>
-                           <li><a href="#">Блог</a></li>
-                           <li><a href="#">Контакты</a></li>
-                        </ul>
-                    </div>
-                    <div class="header__call">
-                        <div class="call__number">+7 (930) 283-50-65</div>
-                        <div class="call__button">Перезвоните мне!</div>
-                    </div>
-                    <div class="menu__button">
-                        <div class="mb__cont">
-                            <div class="menu__buttonLine1 menu__buttonLine"></div>
-                            <div class="menu__buttonLine2 menu__buttonLine"></div>
-                            <div class="menu__buttonLine3 menu__buttonLine"></div>
-                        </div>
-                    </div>
-                </header>
-            </div>
-            <div class="main__img">
-                <img src="img/main_img.png" />
-            </div>
-            <div class="main__description">
-                <p class="description__one">Всего за <b>10 дней</b> с гарантией <b>30 лет</b></p>
-                <p class="description__two">Монолитные<br>лестницы<br>"под ключ"</p>
-                <p class="description__line"></p>
-                <p class="description__three">Исполним все ваши мечты о современной и красивой лестнице по минимальной цене, но с максимальным качеством!</p>
-                <div class="description__button">Консультация</div>
-            </div>
-            <div class="main__calculation">
-                <div class="calculation__text">
-                    Рассчитайте стоимость <br /> вашей лестницы <b>в 3 шага</b>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container _container">
+                <div class="header__logo _ibg">
+                    <img src="img/LOGO.png" alt="logo">
                 </div>
-                <div class="calculation__button">Подробнее</div>
+                <div class="header__name">
+                    <p>Проектирование</p>
+                    <p>Изготовление</p>
+                    <p>Монтаж</p>
+                </div>
+                <nav class="header__navigation">
+                    <ul>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Каталог</a></li>
+                        <li><a href="#">Примеры работ</a></li>
+                        <li><a href="#">Блог</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="header__call">
+                    <div class="header__number">+7 (930) 283-50-65</div>
+                    <div class="header__button orangeButton">Перезвоните мне!</div>
+                </div>
             </div>
-        </div>
-    </div>
+            <div class="menu__button">
+                <div class="mb__cont">
+                    <div class="menu__buttonLine1 menu__buttonLine"></div>
+                    <div class="menu__buttonLine2 menu__buttonLine"></div>
+                    <div class="menu__buttonLine3 menu__buttonLine"></div>
+                </div>
+            </div>
+        </header>
+
+        <!-- <div class="main">
+            <div class="container">
+                
+
+                <div class="main__img">
+                    <img src="img/main_img.png" />
+                </div>
+                <div class="main__description">
+                    <p class="description__one">Всего за <b>10 дней</b> с гарантией <b>30 лет</b></p>
+                    <p class="description__two">Монолитные<br>лестницы<br>"под ключ"</p>
+                    <p class="description__line"></p>
+                    <p class="description__three">Исполним все ваши мечты о современной и красивой лестнице по минимальной цене, но с максимальным качеством!</p>
+                    <div class="description__button">Консультация</div>
+                </div>
+                <div class="main__calculation">
+                    <div class="calculation__text">
+                        Рассчитайте стоимость <br /> вашей лестницы <b>в 3 шага</b>
+                    </div>
+                    <div class="calculation__button">Подробнее</div>
+                </div>
+
+            </div>
+        </div> -->
+
+        <!--
     <div class="advantages">
         <div class="container">
             <div class="advantages__block">
@@ -125,7 +128,6 @@
         </div>
     </div>
 
-    <!--
     <div class="typesStairs">
         <div class="container">
             <div class="ts__header">
@@ -349,7 +351,7 @@
         </div>
     </section>
     -->
-
+    </div>
     <script src="js/script.js"></script>
 </body>
 </html>
